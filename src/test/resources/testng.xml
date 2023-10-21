@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllTestsSuite">
+<test name="AllTests">
+    <packages>
+        <package name="school.redrover.*"/>
+    </packages>
+</test>
+<listeners>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg" />
+    <listener class-name="school.redrover.runner.FilterForTests" />
+    <listener class-name="school.redrover.runner.order.OrderForTests" />
+</listeners>
+</suite>
