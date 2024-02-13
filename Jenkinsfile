@@ -18,6 +18,8 @@ pipeline {
             }
             steps {
                 echo 'testing'
+                sh 'npm ci'
+                sh 'npm run mocha'
                 
             }
         }
